@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <!-- Selected menu indicator - filled circle with ripple -->
+  <circle cx="15" cy="15" r="13" fill="#BB86FC" fill-opacity="0.18"/>
+  <circle cx="15" cy="15" r="7" fill="#BB86FC"/>
+</svg>

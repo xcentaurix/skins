@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <!-- Cable / coaxial connector icon -->
+  <!-- Outer connector body -->
+  <rect x="22" y="26" width="52" height="44" rx="8" fill="none" stroke="#03DAC6" stroke-width="3.5"/>
+  <!-- Pin pins top -->
+  <rect x="34" y="10" width="10" height="20" rx="5" fill="#03DAC6"/>
+  <rect x="52" y="10" width="10" height="20" rx="5" fill="#03DAC6"/>
+  <!-- Pin holes bottom -->
+  <rect x="34" y="66" width="10" height="20" rx="5" fill="#03DAC6"/>
+  <rect x="52" y="66" width="10" height="20" rx="5" fill="#03DAC6"/>
+  <!-- Center contact circle -->
+  <circle cx="48" cy="48" r="10" fill="none" stroke="#03DAC6" stroke-width="3"/>
+  <circle cx="48" cy="48" r="4" fill="#03DAC6"/>
+</svg>

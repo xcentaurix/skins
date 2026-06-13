@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <!-- Satellite dish -->
+  <!-- Dish parabola -->
+  <path d="M18 78 Q20 44 54 24 Q82 18 82 42 Q82 64 58 72 Z"
+        fill="none" stroke="#BB86FC" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- Dish fill -->
+  <path d="M18 78 Q20 44 54 24 Q82 18 82 42 Q82 64 58 72 Z"
+        fill="#BB86FC" fill-opacity="0.12"/>
+  <!-- Feed arm -->
+  <line x1="18" y1="78" x2="46" y2="44" stroke="#BB86FC" stroke-width="3" stroke-linecap="round"/>
+  <!-- Feed horn -->
+  <circle cx="46" cy="44" r="5" fill="#BB86FC"/>
+  <!-- Mast -->
+  <line x1="18" y1="78" x2="10" y2="88" stroke="#BBBBBB" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Base -->
+  <line x1="5" y1="88" x2="20" y2="88" stroke="#BBBBBB" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Signal waves from feed -->
+  <path d="M52 36 Q60 44 52 52" fill="none" stroke="#BB86FC" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M57 30 Q68 44 57 58" fill="none" stroke="#BB86FC" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+</svg>

@@ -1,0 +1,1 @@
+SUBDIRS = AudioSync AutoTimer EPGRefresh EPGSearch Elektro EnhancedMovieCenter FritzCall GenuineDreambox IMDb InfoBarTunerState MediaInfo MediaPortal Partnerbox SeriesPlugin ShowClock VideoDB VirtualZap XBMCMediaCenter dreamIRC eParted fstabEditor pzyP4T serienrecorder

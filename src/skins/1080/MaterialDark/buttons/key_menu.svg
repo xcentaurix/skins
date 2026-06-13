@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <!-- Key cap -->
+  <rect x="2" y="2" width="44" height="44" rx="8" fill="#272727" stroke="#444444" stroke-width="1.5"/>
+  <!-- Hamburger lines -->
+  <rect x="10" y="14" width="28" height="3" rx="1.5" fill="#BB86FC"/>
+  <rect x="10" y="22" width="28" height="3" rx="1.5" fill="#BB86FC"/>
+  <rect x="10" y="30" width="28" height="3" rx="1.5" fill="#BB86FC"/>
+</svg>

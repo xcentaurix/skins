@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="300" viewBox="0 0 30 300">
+  <defs>
+    <linearGradient id="vg" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#333333"/>
+      <stop offset="1" stop-color="#BB86FC"/>
+    </linearGradient>
+  </defs>
+  <!-- Track -->
+  <rect x="13" y="5" width="4" height="290" rx="2" fill="#333333"/>
+  <!-- Fill -->
+  <rect x="13" y="5" width="4" height="290" rx="2" fill="url(#vg)"/>
+  <!-- Knob highlight -->
+  <circle cx="15" cy="5" r="7" fill="#BB86FC"/>
+</svg>

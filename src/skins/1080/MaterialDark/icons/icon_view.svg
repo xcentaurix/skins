@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="24" viewBox="0 0 39 24">
+  <!-- Eye / view icon -->
+  <path d="M2 12 Q10 2 19.5 2 Q29 2 37 12 Q29 22 19.5 22 Q10 22 2 12 Z"
+        fill="none" stroke="#BB86FC" stroke-width="2"/>
+  <circle cx="19.5" cy="12" r="5.5" fill="none" stroke="#BB86FC" stroke-width="2"/>
+  <circle cx="19.5" cy="12" r="2.5" fill="#BB86FC"/>
+</svg>

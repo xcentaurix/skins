@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="132" viewBox="0 0 220 132">
+  <!-- Default picon placeholder -->
+  <rect x="0" y="0" width="220" height="132" fill="#1E1E1E"/>
+  <rect x="0" y="0" width="220" height="132" fill="none" stroke="#333333" stroke-width="2"/>
+  <!-- TV icon -->
+  <rect x="70" y="30" width="80" height="55" rx="4" fill="none" stroke="#616161" stroke-width="2.5"/>
+  <line x1="90" y1="85" x2="130" y2="85" stroke="#616161" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="110" y1="85" x2="110" y2="100" stroke="#616161" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="95" y1="100" x2="125" y2="100" stroke="#616161" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

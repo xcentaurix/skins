@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="225" height="50" viewBox="0 0 225 50">
+  <!-- Active NOW tab: purple accent underline -->
+  <rect x="0" y="0" width="225" height="50" fill="#BB86FC" fill-opacity="0.12"/>
+  <rect x="0" y="46" width="225" height="4" fill="#BB86FC"/>
+</svg>

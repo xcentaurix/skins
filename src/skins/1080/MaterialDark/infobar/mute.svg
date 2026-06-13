@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <!-- Speaker body -->
+  <path d="M6 17 L6 28 L13 28 L22 36 L22 9 L13 17 Z" fill="#CF6679"/>
+  <!-- X cross -->
+  <line x1="28" y1="16" x2="40" y2="29" stroke="#CF6679" stroke-width="3" stroke-linecap="round"/>
+  <line x1="40" y1="16" x2="28" y2="29" stroke="#CF6679" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+	<!-- Material Dark for Enigma2 1080p
+	     Material Design 3 dark theme — Roboto typography — Android-style layout
+	     Icons: Material Design SVGs rendered natively by Enigma2 (NanoSVG). -->
+
+	<output id="0">
+		<resolution bpp="32" xres="1920" yres="1080"/>
+	</output>
+
+	<!-- ── Fonts ────────────────────────────────────────────────────────── -->
+	<!-- System ships Roboto-Bold as 'Regular' and Roboto-Black as 'Bold'.
+	     Medium/Light/Thin/Condensed aliases all map to the available weights. -->
+	<fonts>
+		<font name="Regular"       filename="/usr/share/fonts/Roboto-Bold.ttf"        scale="100"/>
+		<font name="Bold"          filename="/usr/share/fonts/Roboto-Black.ttf"       scale="100"/>
+		<font name="Medium"        filename="/usr/share/fonts/Roboto-Bold.ttf"        scale="100"/>
+		<font name="Light"         filename="/usr/share/fonts/Roboto-Bold.ttf"        scale="100"/>
+		<font name="Thin"          filename="/usr/share/fonts/Roboto-Bold.ttf"        scale="100"/>
+		<font name="Condensed"     filename="/usr/share/fonts/Roboto-Bold.ttf"        scale="100"/>
+		<font name="CondensedBold" filename="/usr/share/fonts/Roboto-Black.ttf"       scale="100"/>
+		<font name="Console"       filename="tuxtxt.ttf"                              scale="100"/>
+		<font name="Fixed"         filename="andale.ttf"                              scale="100"/>
+		<font name="Subtitlefont"  filename="/usr/share/fonts/Roboto-Bold.ttf"        scale="100"/>
+
+		<alias name="Body"             font="Regular"  size="30" height="52"/>
+		<alias name="TextNormal"       font="Regular"  size="30" height="52"/>
+		<alias name="ChoiceList"       font="Regular"  size="32" height="52"/>
+		<alias name="Dreamexplorer"    font="Regular"  size="30" height="52"/>
+		<alias name="FileList"         font="Regular"  size="32" height="52"/>
+		<alias name="FileListMulti"    font="Regular"  size="32" height="52"/>
+		<alias name="PluginBrowser0"   font="Regular"  size="32" height="76"/>
+		<alias name="PluginBrowser1"   font="Regular"  size="22"/>
+		<alias name="SelectionList"    font="Regular"  size="32" height="52"/>
+		<alias name="ServiceInfo"      font="Regular"  size="30" height="52"/>
+		<alias name="VirtualKeyBoard"  font="Regular"  size="40" height="68"/>
+		<alias name="VirtualKeyboard"  font="Regular"  size="40" height="68"/>
+		<alias name="HelpMenuList"     font="Regular"  size="30" height="52"/>
+		<alias name="HelpMenuListExt0" font="Regular"  size="30" height="72"/>
+		<alias name="HelpMenuListExt1" font="Regular"  size="28"/>
+		<alias name="PlayList"         font="Regular"  size="28" height="44"/>
+		<alias name="EPGImportFilterList" font="Regular" size="30" height="52"/>
+		<alias name="PartnerBoxEntryList0"     font="Regular" size="28" height="44"/>
+		<alias name="PartnerBoxEntryList1"     font="Regular" size="28"/>
+		<alias name="PartnerBoxE2TimerMenu0"   font="Regular" size="32" height="52"/>
+		<alias name="PartnerBoxE2TimerMenu1"   font="Regular" size="28"/>
+		<alias name="PartnerBoxBouquetList0"   font="Regular" size="32" height="52"/>
+		<alias name="PartnerBoxBouquetList1"   font="Regular" size="28"/>
+		<alias name="PartnerBoxChannelList0"   font="Regular" size="32" height="52"/>
+		<alias name="PartnerBoxChannelList1"   font="Regular" size="28"/>
+		<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="44"/>
+		<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
+		<alias name="FallbackReceiverList0"    font="Regular" size="28" height="44"/>
+		<alias name="FallbackReceiverList1"    font="Regular" size="28"/>
+	</fonts>
+
+	<!-- ── Material Design 3 Dark Color Palette ─────────────────────────── -->
+	<!-- Enigma2 color format: #AARRGGBB  where AA=00 → opaque, AA=FF → fully transparent -->
+	<colors>
+		<!-- Surfaces (background hierarchy) -->
+		<color name="mdBg"       value="#00121212"/>  <!-- background -->
+		<color name="mdSurface"  value="#001E1E1E"/>  <!-- elevated surface / card -->
+		<color name="mdSurface2" value="#00272727"/>  <!-- header / footer bar -->
+		<color name="mdSurface3" value="#00323232"/>  <!-- hover / active state -->
+
+		<!-- Accent / brand -->
+		<color name="mdPrimary"   value="#00BB86FC"/>  <!-- Material Purple -->
+		<color name="mdSecondary" value="#0003DAC6"/>  <!-- Teal -->
+		<color name="mdError"     value="#00CF6679"/>  <!-- Soft red -->
+
+		<!-- Text (on dark surface) -->
+		<color name="mdOnBg"    value="#00FFFFFF"/>  <!-- high emphasis (100%) -->
+		<color name="mdOnBgMed" value="#00BBBBBB"/>  <!-- medium emphasis (74%) -->
+		<color name="mdOnBgLow" value="#00616161"/>  <!-- disabled (38%) -->
+
+		<!-- Dividers -->
+		<color name="mdSeparator"  value="#00333333"/>
+		<color name="mdProgressBg" value="#00333333"/>
+
+		<!-- List selection -->
+		<color name="mdSelectedBG" value="#00373737"/>
+		<color name="mdSelectedFG" value="#00BB86FC"/>
+		<color name="mdMarkedBG"   value="#00443744"/>
+		<color name="mdMarkedFG"   value="#00CF6679"/>
+
+		<!-- InfoBar background (semi-transparent dark) -->
+		<color name="mdInfobarBG" value="#D5121212"/>
+
+		<!-- Color key buttons -->
+		<color name="buttonred"    value="#00CF6679"/>
+		<color name="buttongreen"  value="#0003DAC6"/>
+		<color name="buttonyellow" value="#00FDD835"/>
+		<color name="buttonblue"   value="#00BB86FC"/>
+
+		<!-- Legacy / compatibility color names used by Enigma2 and plugins -->
+		<color name="background"     value="#00121212"/>
+		<color name="foreground"     value="#00FFFFFF"/>
+		<color name="black"          value="#00000000"/>
+		<color name="white"          value="#00FFFFFF"/>
+		<color name="blue"           value="#00BB86FC"/>
+		<color name="red"            value="#00CF6679"/>
+		<color name="green"          value="#0003DAC6"/>
+		<color name="yellow"         value="#00FDD835"/>
+		<color name="cyan"           value="#0000FFFF"/>
+		<color name="magenta"        value="#00FF00FF"/>
+		<color name="orange"         value="#00FF9800"/>
+		<color name="grey"           value="#00BBBBBB"/>
+		<color name="darkgrey"       value="#00616161"/>
+		<color name="lightgrey"      value="#00DDDDDD"/>
+		<color name="transparent"    value="#FFFFFFFF"/>
+		<color name="secondBG"       value="#C8121212"/>
+		<color name="secondFG"       value="#0003DAC6"/>
+		<color name="selectedBG"     value="#00373737"/>
+		<color name="selectedFG"     value="#00BB86FC"/>
+		<color name="listbox"        value="#00BB86FC"/>
+		<color name="toptemplatecolor"  value="#00272727"/>
+		<color name="basictemplatecolor" value="#001E1E1E"/>
+		<color name="noTransBG"      value="#00121212"/>
+		<color name="transpBlack"    value="#8C121212"/>
+		<color name="dark"           value="#001E1E1E"/>
+		<color name="fallback"       value="#00888888"/>
+		<color name="notavailable"   value="#00616161"/>
+		<color name="rds_text_bg"    value="#00272727"/>
+		<color name="console"        value="#0003DAC6"/>
+		<color name="consolebackground" value="#00121212"/>
+		<color name="un33333a"       value="#0033333A"/>
+		<color name="un40a0aa0"      value="#04A00A0A"/>
+		<color name="un4a00a0a"      value="#04A00A0A"/>
+		<color name="uncccccc"       value="#00CCCCCC"/>
+	</colors>
+
+	<!-- ── Layout parameters ────────────────────────────────────────────── -->
+	<parameters>
+		<parameter name="ChoicelistIcon"          value="5,8,36,36"/>
+		<parameter name="ChoicelistDash"          value="0,8,800,44"/>
+		<parameter name="ChoicelistName"          value="46,8,800,44"/>
+		<parameter name="ConfigListSeperator"     value="900"/>
+		<parameter name="ConfigListSlider"        value="22,1"/>
+		<parameter name="FileListIcon"            value="5,8,36,36"/>
+		<parameter name="FileListName"            value="52,0,1000,52"/>
+		<parameter name="FileListMultiLock"       value="3,8,36,36"/>
+		<parameter name="FileListMultiIcon"       value="45,10,30,30"/>
+		<parameter name="FileListMultiName"       value="88,0,1000,52"/>
+		<parameter name="VirtualKeyBoard"         value="68,68"/>
+		<parameter name="VirtualKeyboard"         value="68,68"/>
+		<parameter name="VirtualKeyBoardShiftColors" value="mdBg,mdBg,mdSecondary,mdPrimary"/>
+		<parameter name="PluginBrowserIcon"       value="8,8,60,60"/>
+		<parameter name="PluginBrowserName"       value="80,5,36"/>
+		<parameter name="PluginBrowserDescr"      value="80,42,28"/>
+		<parameter name="PluginBrowserDownloadIcon"  value="0,0,90,75"/>
+		<parameter name="PluginBrowserDownloadName"  value="100,5,36"/>
+		<parameter name="PluginBrowserDownloadDescr" value="100,42,28"/>
+		<parameter name="SelectionListLock"       value="0,8,36,36"/>
+		<parameter name="SelectionListLockOff"    value="0,8,36,36"/>
+		<parameter name="SelectionListDescr"      value="46,4,800,44"/>
+		<parameter name="ServiceInfoLeft"         value="0,0,450,44"/>
+		<parameter name="ServiceInfoRight"        value="250,0,820,44"/>
+		<parameter name="ServiceInfoLeftColumnAlignment"  value="*RT_HALIGN_LEFT"/>
+		<parameter name="ServiceInfoRightColumnAlignment" value="*RT_HALIGN_RIGHT"/>
+		<parameter name="PlayListIcon"            value="8,8,36,36"/>
+		<parameter name="PlayListName"            value="56,0,800,44"/>
+		<parameter name="EPGImportFilterListLockOn"  value="8,8,35,35"/>
+		<parameter name="EPGImportFilterListLockOff" value="8,8,35,35"/>
+		<parameter name="EPGImportFilterListDescr"   value="54,8,800,44"/>
+		<parameter name="HelpMenuListHlp"         value="0,0,900,44"/>
+		<parameter name="HelpMenuListExtHlp0"     value="0,0,900,39"/>
+		<parameter name="HelpMenuListExtHlp1"     value="0,42,900,30"/>
+		<parameter name="AutotimerEnabledIcon"    value="2,8,35,35"/>
+		<parameter name="AutotimerRecordIcon"     value="40,10,28,28"/>
+		<parameter name="AllowUserDatesAndTimes"  value="1,1"/>
+		<parameter name="AboutColors"             value="#00FFFFFF,#00BB86FC"/>
+		<parameter name="FallbackReceiverListName" value="8,2,225,44"/>
+		<parameter name="FallbackReceiverListIP"   value="300,2,225,44"/>
+	</parameters>
+
+	<!-- ── Window style (screens without wfNoBorder) ─────────────────────── -->
+	<windowstyle id="0" type="skinned">
+		<title offset="24,22" font="Bold;36"/>
+		<color name="Background"                       color="mdSurface"/>
+		<color name="LabelForeground"                  color="mdOnBg"/>
+		<color name="ListboxBackground"                color="mdSurface"/>
+		<color name="ListboxForeground"                color="mdOnBg"/>
+		<color name="ListboxSelectedBackground"        color="mdSelectedBG"/>
+		<color name="ListboxSelectedForeground"        color="mdSelectedFG"/>
+		<color name="ListboxMarkedBackground"          color="mdMarkedBG"/>
+		<color name="ListboxMarkedForeground"          color="mdMarkedFG"/>
+		<color name="ListboxMarkedAndSelectedBackground" color="mdMarkedBG"/>
+		<color name="ListboxMarkedAndSelectedForeground" color="mdMarkedFG"/>
+		<color name="WindowTitleForeground"            color="mdOnBg"/>
+		<color name="WindowTitleBackground"            color="mdSurface2"/>
+	</windowstyle>
+
+	<switchpixmap>
+		<pixmap name="menu_on"  filename="/usr/share/enigma2/MaterialDark/icons/menu_on.svg"/>
+		<pixmap name="menu_off" filename="/usr/share/enigma2/MaterialDark/icons/menu_off.svg"/>
+	</switchpixmap>
+
+	<include filename="/usr/share/enigma2/MaterialDark/skin_templates.xml"/>
+	<include filename="/usr/share/enigma2/MaterialDark/skin_plugins.xml"/>
+
+	<!-- ══════════════════════════════════════════════════════════════════ -->
+	<!-- SCREENS                                                            -->
+	<!-- ══════════════════════════════════════════════════════════════════ -->
+
+	<!-- ── Volume / Mute ────────────────────────────────────────────────── -->
+	<screen name="Volume" title="Volume" position="0,360" size="30,330" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
+		<widget name="Volume" pixmap="/usr/share/enigma2/MaterialDark/infobar/volumeslider.svg" position="0,3" size="30,300" orientation="orBottomToTop" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="/usr/share/enigma2/MaterialDark/infobar/vol_box.svg" position="0,303" size="30,24" alphatest="on" zPosition="4"/>
+	</screen>
+
+	<screen name="Mute" title="Mute" position="center,15" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
+		<ePixmap pixmap="/usr/share/enigma2/MaterialDark/infobar/mute.svg" position="0,0" size="45,45" alphatest="on" zPosition="0"/>
+	</screen>
+
+	<!-- ── Buffer indicator ─────────────────────────────────────────────── -->
+	<screen name="BufferIndicator" title="" position="c-300,45" size="600,52" backgroundColor="transparent" flags="wfNoBorder" zPosition="100">
+		<widget name="status" position="0,0" size="600,52" transparent="1" font="Medium;36" foregroundColor="mdOnBg" borderColor="mdBg" borderWidth="2" valign="center" halign="center"/>
+	</screen>
+
+	<!-- ── Job view ─────────────────────────────────────────────────────── -->
+	<screen name="JobView" position="fill" title="Job View" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<widget source="job_name"     render="Label" position="30,108" size="1860,52" font="Bold;36" foregroundColor="mdOnBg"/>
+		<widget source="job_task"     render="Label" position="30,282" size="1860,44" font="Regular;34" foregroundColor="mdOnBgMed"/>
+		<eLabel position="30,390" size="1860,4" backgroundColor="mdProgressBg"/>
+		<widget source="job_progress" render="Progress" position="30,390" size="1860,4" foregroundColor="mdPrimary" backgroundColor="mdProgressBg" transparent="1" zPosition="2" borderWidth="0"/>
+		<widget source="job_progress" render="Label" position="30,400" size="1860,44" font="Medium;36" foregroundColor="mdSecondary" zPosition="2" transparent="1" halign="center">
+			<convert type="ProgressToText"/>
+		</widget>
+		<widget source="job_status" render="Label" position="30,452" size="1860,40" font="Regular;32" foregroundColor="mdOnBgMed"/>
+		<widget name="config"       position="30,510" size="1860,36" itemHeight="44" font="Regular;28"/>
+	</screen>
+
+	<!-- ── InfoBar ───────────────────────────────────────────────────────── -->
+	<screen name="InfoBar" title="InfoBar" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="InfoBarTemplate"/>
+	</screen>
+
+	<!-- ── Second InfoBar (simple — now/next description) ───────────────── -->
+	<screen name="SecondInfoBarSimple" title="Second InfoBar" position="fill" flags="wfNoBorder">
+		<eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
+		<widget source="session.Event_Now" render="Label" position="30,20" size="915,40" transparent="1" zPosition="1" foregroundColor="mdSecondary" noWrap="1" font="Medium;34" halign="left">
+			<convert type="EventName">NameNow</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="30,72" size="765,30" font="Regular;28" halign="left" foregroundColor="mdPrimary" transparent="1" zPosition="1">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="545,72" size="400,30" font="Regular;28" halign="right" foregroundColor="mdPrimary" transparent="1" zPosition="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="30,118" size="915,700" font="Regular;28" halign="block" zPosition="1" transparent="1" foregroundColor="mdOnBg">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="975,20" size="915,40" transparent="1" zPosition="1" foregroundColor="mdSecondary" noWrap="1" font="Medium;34" halign="left">
+			<convert type="EventName">NameNext</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="975,72" size="765,30" font="Regular;28" halign="left" foregroundColor="mdPrimary" transparent="1" zPosition="1">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="1490,72" size="400,30" font="Regular;28" halign="right" foregroundColor="mdPrimary" transparent="1" zPosition="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="975,118" size="915,700" font="Regular;28" halign="block" zPosition="1" transparent="1" foregroundColor="mdOnBg">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<panel position="0,-35" size="e,e">
+			<panel name="InfoBarTemplate"/>
+		</panel>
+		<panel name="ButtonTemplate"/>
+	</screen>
+
+	<!-- ── Second InfoBar (extended technical info) ─────────────────────── -->
+	<screen name="SecondInfoBar" title="Second InfoBar" position="fill" flags="wfNoBorder">
+		<eLabel position="fill" backgroundColor="transpBlack" zPosition="-1"/>
+		<widget source="session.CurrentService" render="Label" position="30,20" size="1440,130" transparent="1" zPosition="1" foregroundColor="mdOnBg" font="Regular;28" valign="top" halign="left">
+			<convert type="PliExtraInfo">All</convert>
+		</widget>
+		<widget source="session.FrontendStatus" render="Progress" position="1590,22" size="300,28" foregroundColor="mdPrimary" backgroundColor="mdProgressBg" transparent="1" zPosition="1" borderWidth="0">
+			<convert type="FrontendInfo">SNR</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.FrontendStatus" render="Label" position="1590,22" size="80,28" transparent="1" zPosition="2" foregroundColor="mdOnBgMed" font="Light;22" halign="left">
+			<convert type="FrontendInfo">SNR</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.FrontendStatus" render="Label" position="1740,22" size="150,28" transparent="1" zPosition="2" foregroundColor="mdOnBgMed" font="Light;22" halign="right">
+			<convert type="FrontendInfo">SNR</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="30,165" size="915,40" transparent="1" zPosition="1" foregroundColor="mdSecondary" noWrap="1" font="Medium;34" halign="left">
+			<convert type="EventName">NameNow</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="30,215" size="765,30" font="Regular;28" halign="left" foregroundColor="mdPrimary" transparent="1" zPosition="1">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="30,260" size="915,555" font="Regular;28" halign="block" zPosition="1" transparent="1" foregroundColor="mdOnBg">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="975,165" size="915,40" transparent="1" zPosition="1" foregroundColor="mdSecondary" noWrap="1" font="Medium;34" halign="left">
+			<convert type="EventName">NameNext</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="975,215" size="765,30" font="Regular;28" halign="left" foregroundColor="mdPrimary" transparent="1" zPosition="1">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="975,260" size="915,555" font="Regular;28" halign="block" zPosition="1" transparent="1" foregroundColor="mdOnBg">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<panel position="0,-35" size="e,e">
+			<panel name="InfoBarTemplate"/>
+		</panel>
+		<panel name="ButtonTemplate"/>
+	</screen>
+
+	<!-- ── Movie Player bar ─────────────────────────────────────────────── -->
+	<screen name="MoviePlayer" title="InfoBar" position="150,67" size="1620,150" backgroundColor="secondBG" flags="wfNoBorder">
+		<panel name="PlayerTemplate"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/infobar/ico_dolby_on.svg" position="1467,107" size="50,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/infobar/ico_format_hd.svg" position="1518,107" size="60,32" zPosition="4" alphatest="on">
+			<convert type="ServiceInfo">IsHD</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/infobar/ico_format_16_9.svg" position="1518,107" size="60,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/infobar/ico_format_4_3.svg" position="1518,107" size="60,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>
+
+	<!-- ── DVD Player bar ───────────────────────────────────────────────── -->
+	<screen name="DVDPlayer" title="InfoBar" position="150,67" size="1620,352" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="PlayerTemplate"/>
+		<widget name="chapterLabel" position="270,150" size="570,44" font="Regular;28" halign="left" valign="center" noWrap="1" backgroundColor="transparent" zPosition="3"/>
+		<eLabel text="Audio:" position="270,202" size="115,44" transparent="1" font="Regular;28" valign="center" halign="left"/>
+		<widget name="audioLabel"    position="390,202" size="450,44" font="Regular;28" halign="left" valign="center" noWrap="1" backgroundColor="transparent" zPosition="3"/>
+		<eLabel text="Subtitle:" position="270,252" size="115,44" transparent="1" font="Regular;28" valign="center" halign="left"/>
+		<widget name="subtitleLabel" position="390,252" size="450,44" font="Regular;28" halign="left" valign="center" noWrap="1" backgroundColor="transparent" zPosition="3"/>
+		<widget name="anglePix"   position="960,192" size="39,24" pixmap="/usr/share/enigma2/MaterialDark/icons/icon_view.svg" zPosition="3" alphatest="on"/>
+		<widget name="angleLabel" position="1020,183" size="300,32" font="Regular;28" backgroundColor="mdBg" zPosition="3" transparent="1"/>
+	</screen>
+
+	<screen name="ChapterZap" position="center,center" size="360,82" title="Chapter" flags="wfNoBorder">
+		<eLabel position="0,0" size="360,82" backgroundColor="secondBG"/>
+		<eLabel position="0,0" size="360,2" backgroundColor="mdPrimary"/>
+		<widget name="chapter" position="30,20" size="180,42" font="Regular;32" foregroundColor="mdSecondary" transparent="1"/>
+		<widget name="number"  position="210,20" size="120,42" halign="right" font="Regular;32" zPosition="1" transparent="1" foregroundColor="mdOnBg"/>
+	</screen>
+
+	<!-- ── Channel Selection ────────────────────────────────────────────── -->
+	<screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
+		<panel name="SimpleChannelSelection"/>
+		<widget source="ServiceEvent" render="Label" position="1140,92" size="750,28" foregroundColor="mdOnBgMed" font="Light;24" valign="center" halign="center" transparent="1" zPosition="1">
+			<convert type="TransponderInfo"/>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1140,130" size="90,32" transparent="1" foregroundColor="mdOnBgMed" font="Regular;26" halign="left">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<eLabel position="1230,136" size="620,4" backgroundColor="mdProgressBg"/>
+		<widget source="ServiceEvent" render="Progress" position="1230,136" size="620,4" foregroundColor="mdPrimary" backgroundColor="mdProgressBg" transparent="1" borderWidth="0" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1800,130" size="90,32" transparent="1" foregroundColor="mdOnBgMed" font="Regular;26" halign="right">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1140,172" size="750,38" transparent="1" foregroundColor="mdSecondary" noWrap="1" font="Medium;32" halign="left">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1140,218" size="750,500" transparent="1" font="Regular;28" halign="block" foregroundColor="mdOnBg">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget source="ServiceEvent" render="NextEpgInfo" position="1140,726" size="750,266" transparent="1" timeColor="mdOnBgMed" foregroundColor="mdSecondary" noLabel="1" noWrap="1" font="Regular;28" NumberOfItems="4"/>
+	</screen>
+
+	<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list" position="30,92" size="1080,912" itemHeight="52" transparent="1" serviceNumberFont="Regular;32"
+			scrollbarMode="showOnDemand" serviceInfoFont="Regular;26" serviceNameFont="Regular;32" serviceItemHeight="52"
+			progressbarHeight="4" progressBarWidth="60" progressPercentWidth="80"
+			colorEventProgressbar="#00BB86FC" colorEventProgressbarBorder="#00333333"
+			colorEventProgressbarBorderSelected="#00616161" colorServiceDescription="#0003DAC6"
+			fieldMargins="12" nonplayableMargins="12" colorServiceDescriptionFallback="#0003DAC6"
+			colorServiceDescriptionSelectedFallback="#0003DAC6" colorFallbackItem="#00888888"
+			foregroundColorServiceNotAvail="#00616161" backgroundColorMarked="#00443744"
+			colorServiceSelectedFallback="#00BB86FC"/>
+	</screen>
+
+	<!-- ── EPG Selection ────────────────────────────────────────────────── -->
+	<screen name="EPGSelection" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list" position="30,92" size="1080,912" itemHeight="52" setEventItemFont="Regular;30" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget source="Service" render="Label" position="1140,92" size="750,28" foregroundColor="mdOnBgMed" font="Light;24" valign="center" halign="center" transparent="1" zPosition="1">
+			<convert type="TransponderInfo"/>
+		</widget>
+		<widget source="Event" render="Label" position="1140,130" size="750,38" foregroundColor="mdSecondary" font="Medium;32" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1140,176" size="750,550" transparent="1" font="Regular;28" halign="block" foregroundColor="mdOnBg">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1140,740" size="250,32" transparent="1" foregroundColor="mdSecondary" font="Regular;28">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1390,740" size="120,32" transparent="1" foregroundColor="mdSecondary" font="Regular;28" halign="left">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1510,740" size="130,32" transparent="1" foregroundColor="mdSecondary" font="Regular;28" halign="left">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1750,740" size="140,32" transparent="1" foregroundColor="mdOnBgMed" font="Light;28" halign="right">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">AsLengthHours</convert>
+		</widget>
+	</screen>
+
+	<!-- ── Event View ────────────────────────────────────────────────────── -->
+	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="FullDescription" position="30,92" size="1080,880" transparent="1" font="Regular;30" halign="block" foregroundColor="mdOnBg"/>
+		<widget source="session.CurrentService" render="Label" position="1140,92" size="750,28" foregroundColor="mdOnBgMed" font="Light;22" valign="center" halign="center" transparent="1" zPosition="1">
+			<convert type="TransponderInfo"/>
+		</widget>
+		<widget name="channel"  position="1140,130" size="750,44" transparent="1" foregroundColor="mdSecondary" font="Medium;32" halign="left"/>
+		<widget name="datetime" position="1140,182" size="750,44" transparent="1" font="Regular;30" halign="left" foregroundColor="mdOnBg"/>
+		<widget name="duration" position="1140,234" size="420,44" transparent="1" font="Regular;30" halign="left" foregroundColor="mdOnBg"/>
+		<widget source="session.Event_Now" render="Label" position="1560,234" size="330,44" transparent="1" zPosition="1" foregroundColor="mdOnBgMed" font="Regular;28" halign="right">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1140,286" size="750,34" transparent="1" zPosition="1" foregroundColor="mdPrimary" font="Regular;28" halign="left">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1140,328" size="750,34" transparent="1" zPosition="1" foregroundColor="mdPrimary" font="Regular;28" halign="left">
+			<convert type="EventName">Rating</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="1140,880" size="750,40" font="Regular;32" halign="left" foregroundColor="mdSecondary" transparent="1">
+			<convert type="EventName">NameNext</convert>
+		</widget>
+	</screen>
+
+	<screen name="EventViewContextMenu" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ConfigMenuTemplate"/>
+		<panel name="DescriptionTemplate"/>
+	</screen>
+
+	<!-- ── EPG Multi (now/next/more) ─────────────────────────────────────── -->
+	<screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="date"       position="30,92"  size="1080,40" font="Medium;32" transparent="1" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="list"       position="30,200" size="1080,17*52" itemHeight="52" setEventItemFont="Regular;28" setEventTimeFont="Regular;22" setColWidths="350,150" setColGap="20" setTimeWidth="135" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="bouquetlist" position="30,200" size="1080,17*52" itemHeight="52" font="Regular;32" foregroundColorSelected="mdSelectedFG" backgroundColorSelected="mdSelectedBG" zPosition="4" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget source="Event" render="Label" position="1140,92" size="750,900" transparent="1" font="Regular;30" halign="block" foregroundColor="mdOnBg">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<!-- NOW / NEXT / MORE tab strip (flat Material style) -->
+		<eLabel position="30,140" size="1080,4" backgroundColor="mdProgressBg"/>
+		<widget name="now_button"     pixmap="/usr/share/enigma2/MaterialDark/border/epg_off.svg"     position="30,140"   zPosition="2" size="225,50" alphatest="blend"/>
+		<widget name="now_button_sel" pixmap="/usr/share/enigma2/MaterialDark/border/epg_now_on.svg"  position="30,140"   zPosition="3" size="225,50" alphatest="blend"/>
+		<widget name="now_text"  position="30,145"   size="225,50" transparent="1" text="NOW"  font="Medium;26" valign="center" halign="center" foregroundColor="mdOnBg" zPosition="4"/>
+		<widget name="next_button"     pixmap="/usr/share/enigma2/MaterialDark/border/epg_off.svg"     position="458,140"  zPosition="2" size="225,50" alphatest="blend"/>
+		<widget name="next_button_sel" pixmap="/usr/share/enigma2/MaterialDark/border/epg_next_on.svg" position="458,140"  zPosition="3" size="225,50" alphatest="blend"/>
+		<widget name="next_text" position="458,145"  size="225,50" transparent="1" text="NEXT" font="Medium;26" valign="center" halign="center" foregroundColor="mdOnBg" zPosition="4"/>
+		<widget name="more_button"     pixmap="/usr/share/enigma2/MaterialDark/border/epg_off.svg"     position="885,140"  zPosition="2" size="225,50" alphatest="blend"/>
+		<widget name="more_button_sel" pixmap="/usr/share/enigma2/MaterialDark/border/epg_next_on.svg" position="885,140"  zPosition="3" size="225,50" alphatest="blend"/>
+		<widget name="more_text" position="885,145"  size="225,50" transparent="1" text="MORE" font="Medium;26" valign="center" halign="center" foregroundColor="mdOnBg" zPosition="4"/>
+	</screen>
+
+	<!-- ── EPG Search ───────────────────────────────────────────────────── -->
+	<screen name="EPGSearch" title="EPG Search" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list" position="30,92" size="1080,912" itemHeight="44" setEventItemFont="Regular;30" setEventTimeFont="Regular;28" setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget source="Event" render="Label" position="1140,92" size="750,900" transparent="1" font="Regular;28" halign="block" foregroundColor="mdOnBg">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+	</screen>
+
+	<screen name="EPGSearchSetup" title="EPGSearch Setup" position="fill" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+	</screen>
+
+	<!-- ── Graph Multi-EPG (timeline view) ──────────────────────────────── -->
+	<screen name="GraphMultiEPG" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="Event" render="Label" position="30,108" size="225,34" transparent="1" foregroundColor="mdSecondary" font="Regular;30" valign="top">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Event" render="Label" position="180,108" size="120,34" transparent="1" foregroundColor="mdSecondary" font="Regular;30" halign="right" valign="top">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="300,108" size="120,34" transparent="1" foregroundColor="mdSecondary" font="Regular;30" halign="left" valign="top">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format: - %H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="435,108" size="1455,34" transparent="1" foregroundColor="mdSecondary" font="Regular;30" valign="top">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<eLabel position="30,148" size="1860,4" backgroundColor="mdProgressBg"/>
+		<widget source="Event" render="Progress" position="30,148" size="1860,4" foregroundColor="mdPrimary" backgroundColor="mdProgressBg" transparent="1" borderWidth="0" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="Event" render="Label" position="30,160" size="1860,315" transparent="1" font="Regular;30" halign="block" foregroundColor="mdOnBg">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<widget source="Event" render="Label" position="30,505" size="1560,28" foregroundColor="mdPrimary" transparent="1" font="Regular;24" halign="left">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1620,505" size="270,28" foregroundColor="mdPrimary" transparent="1" font="Regular;24" halign="right">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget name="timeline_text" position="30,540" size="1860,40" itemHeight="40" font="Regular;30" TimelineFont="Regular;28" foregroundColor="mdSecondary" backgroundColor="mdBg" transparent="1"/>
+		<widget name="list" position="30,585" size="1860,415" itemHeight="52" ServiceFont="Regular;26" transparent="1" scrollbarMode="showNever"
+			EntryBackgroundColor="mdBg" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#00333333" EntryFont="Regular;28"
+			ServiceBorderVerWidth="2" EventBorderVerWidth="2" RecIconSize="28" IconXPadding="6" IconYPadding="4"/>
+		<widget name="timeline0" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,580" size="1,420" zPosition="1"/>
+		<widget name="timeline1" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,580" size="1,420" zPosition="1"/>
+		<widget name="timeline2" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,580" size="1,420" zPosition="1"/>
+		<widget name="timeline3" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,580" size="1,420" zPosition="1"/>
+		<widget name="timeline4" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,580" size="1,420" zPosition="1"/>
+		<widget name="timeline5" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,580" size="1,420" zPosition="1"/>
+		<widget name="timeline_now" pixmap="/usr/share/enigma2/MaterialDark/window/timeline-now.svg" position="6,580" size="28,420" zPosition="2" alphatest="blend"/>
+	</screen>
+
+	<screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<widget source="Event" render="Label" position="30,108" size="200,36" transparent="1" foregroundColor="mdSecondary" font="Regular;32" valign="top">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Event" render="Label" position="245,108" size="120,36" transparent="1" foregroundColor="mdSecondary" font="Regular;32" halign="right" valign="top">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="365,108" size="120,36" transparent="1" foregroundColor="mdSecondary" font="Regular;32" halign="left" valign="top">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format: - %H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="505,108" size="1395,36" transparent="1" foregroundColor="mdSecondary" font="Regular;32" halign="left" valign="top">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="30,148" size="1860,110" font="Regular;30" valign="top" halign="block" foregroundColor="mdOnBg">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<widget name="timeline_text" position="30,262" size="1860,40" itemHeight="40" font="Regular;30" TimelineFont="Regular;28" foregroundColor="mdSecondary" backgroundColor="mdBg" transparent="1"/>
+		<widget name="list" position="30,306" size="1860,712" itemHeight="52" ServiceFont="Regular;26" transparent="1" scrollbarMode="showNever"
+			EntryBackgroundColor="mdBg" EventNamePadding="6" EntryBorderColor="#00333333" EntryFont="Regular;28"
+			ServiceBorderVerWidth="2" EventBorderVerWidth="2" RecIconSize="28" IconXPadding="6" IconYPadding="4"/>
+		<widget name="timeline0" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,301" size="1,714" zPosition="1"/>
+		<widget name="timeline1" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,301" size="1,714" zPosition="1"/>
+		<widget name="timeline2" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,301" size="1,714" zPosition="1"/>
+		<widget name="timeline3" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,301" size="1,714" zPosition="1"/>
+		<widget name="timeline4" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,301" size="1,714" zPosition="1"/>
+		<widget name="timeline5" pixmap="/usr/share/enigma2/MaterialDark/window/timeline.svg" position="0,301" size="1,714" zPosition="1"/>
+		<widget name="timeline_now" pixmap="/usr/share/enigma2/MaterialDark/window/timeline-now.svg" position="6,301" size="28,713" zPosition="2" alphatest="blend" scale="1"/>
+	</screen>
+
+	<screen name="GraphMultiEpgSetup" position="fill" title="EPG Setup" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+		<panel name="CancelOKTemplate"/>
+	</screen>
+
+	<screen name="SelectBouquet" position="fill" title="Choose bouquet" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+	</screen>
+
+	<!-- ── Menus ─────────────────────────────────────────────────────────── -->
+	<screen flags="wfNoBorder" name="Menu"             position="fill"><panel name="MenuTemplate"/></screen>
+	<screen flags="wfNoBorder" name="menu_mainmenu"    position="fill"><panel name="MenuTemplate"/></screen>
+	<screen flags="wfNoBorder" name="menu_setup"       position="fill"><panel name="MenuTemplate"/></screen>
+	<screen flags="wfNoBorder" name="menu_system"      position="fill"><panel name="MenuTemplate"/></screen>
+	<screen flags="wfNoBorder" name="menu_information" position="fill"><panel name="MenuTemplate"/></screen>
+	<screen flags="wfNoBorder" name="menu_scan"        position="fill"><panel name="MenuTemplate"/></screen>
+
+	<!-- Horizontal (bottom-dock) menu — Android-style bottom navigation bar -->
+	<screen name="MenuHorizontal" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,e-195" size="e,2" backgroundColor="mdPrimary" zPosition="0"/>
+		<eLabel position="0,e-193" size="e,193" backgroundColor="mdInfobarBG" zPosition="0"/>
+		<widget source="Title" conditional="Title" render="Label" position="0,e-185" size="e,76" font="Bold;56" halign="center" valign="center" transparent="1" foregroundColor="mdOnBg"/>
+		<widget source="menu" render="Listbox" enableWrapAround="off" position="60,e-95" size="1800,80"
+			foregroundColorSelected="mdSelectedFG" foregroundColor="mdOnBg"
+			backgroundColorSelected="mdSurface3" backgroundColor="transparent"
+			scrollbarMode="showNever" selectionFrame="none">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos=(10,0), size=(340,80), flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=0)
+				],
+				"fonts": [gFont("Regular", 32)],
+				"itemHeight": 80, "itemWidth": 360, "orientation": "orHorizontal"
+				}
+			</convert>
+		</widget>
+		<widget addon="Pager" connection="menu" itemHeight="75" showIcons="onlyFirst" picPage="/usr/share/enigma2/MaterialDark/icons/chevronleft.svg" picPageCurrent="/usr/share/enigma2/MaterialDark/icons/chevronlefttrans.svg" position="0,e-85" size="50,75" transparent="0" backgroundColor="mdSurface3"/>
+		<widget addon="Pager" connection="menu" itemHeight="75" showIcons="onlyLast"  picPage="/usr/share/enigma2/MaterialDark/icons/chevronright.svg" picPageCurrent="/usr/share/enigma2/MaterialDark/icons/chevronrighttrans.svg" position="e-50,e-85" size="50,75" transparent="0" backgroundColor="mdSurface3"/>
+	</screen>
+
+	<!-- ── Setup / config screens ───────────────────────────────────────── -->
+	<screen name="Setup"       title="Setup"         position="fill" flags="wfNoBorder"><panel name="SetupPanelPIG"/></screen>
+	<screen name="ScanSetup"                         position="fill" flags="wfNoBorder"><panel name="SetupPanelPIG"/></screen>
+	<screen name="ScanSimple"                        position="fill" flags="wfNoBorder"><panel name="SetupPanelPIG"/></screen>
+	<screen name="RecordPathsSettings"               position="fill" flags="wfNoBorder"><panel name="SetupPanelPIG"/></screen>
+	<screen name="FastScanScreen" title="Fast Scan"  position="fill" flags="wfNoBorder"><panel name="SetupPanelPIG"/></screen>
+
+	<!-- ── Service scan ─────────────────────────────────────────────────── -->
+	<screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<widget source="FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/icons/scan-s.svg" position="30,108" size="96,96" zPosition="2" transparent="1" alphatest="on">
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/icons/scan-c.svg" position="30,108" size="96,96" zPosition="2" transparent="1" alphatest="on">
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/icons/scan-t.svg" position="30,108" size="96,96" zPosition="2" transparent="1" alphatest="on">
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget name="network"     position="135,108" size="975,44" valign="center" zPosition="2" font="Regular;32" transparent="1" foregroundColor="mdOnBg"/>
+		<widget name="transponder" position="135,160" size="975,88" valign="top"    zPosition="2" font="Regular;30" transparent="1" foregroundColor="mdOnBgMed"/>
+		<eLabel position="30,268" size="1080,4" backgroundColor="mdProgressBg"/>
+		<widget name="scan_progress" position="30,268" size="1080,4" foregroundColor="mdPrimary" backgroundColor="mdProgressBg" zPosition="2" borderWidth="0"/>
+		<widget name="scan_state"  position="30,282" size="1080,68" valign="top" zPosition="2" font="Regular;30" transparent="1" foregroundColor="mdOnBg"/>
+		<widget name="pass"        position="30,360" size="1080,44" valign="center" font="Regular;30" transparent="1" foregroundColor="mdSecondary"/>
+		<widget name="servicelist" position="1140,92" size="750,900" itemHeight="52" font="Regular;30" selectionDisabled="1" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<widget name="frontend"    pixmap="/usr/share/enigma2/MaterialDark/icons/scan-s.svg" position="30,108" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+		<widget name="scan_state"  position="30,270" size="810,44" valign="center" zPosition="2" font="Regular;30" transparent="1" foregroundColor="mdOnBg"/>
+		<eLabel position="30,322" size="810,4" backgroundColor="mdProgressBg"/>
+		<widget name="scan_progress" position="30,322" size="810,4" foregroundColor="mdPrimary" backgroundColor="mdProgressBg" zPosition="2" borderWidth="0"/>
+	</screen>
+
+	<!-- ── Choice boxes ─────────────────────────────────────────────────── -->
+	<screen name="ChoiceBox" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="TextTemplate"/>
+		<widget name="list" position="30,92" size="1080,900" itemHeight="52" font="Regular;32" scrollbarMode="showOnDemand" foregroundColor="mdOnBg"/>
+	</screen>
+
+	<screen name="SortbyChoiceBox" title="" position="fill" flags="wfNoBorder">
+		<panel name="ChoiceBox"/>
+	</screen>
+
+	<screen name="MovieoffChoiceBox" title="End of movie" position="fill" flags="wfNoBorder">
+		<panel name="ChoiceBox"/>
+	</screen>
+
+	<!-- ── Hotkey setup ─────────────────────────────────────────────────── -->
+	<screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list"    position="30,92"    size="1080,876" scrollbarMode="showOnDemand"/>
+		<widget name="choosen" position="1140,92"  size="750,500"  scrollbarMode="showOnDemand"/>
+		<widget name="description" position="1140,980" size="750,30" zPosition="1" font="Light;24" halign="center" foregroundColor="mdOnBgMed"/>
+	</screen>
+
+	<screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list"    position="30,92"    size="1080,800" scrollbarMode="showOnDemand"/>
+		<widget name="choosen" position="1140,92"  size="750,500"  scrollbarMode="showOnDemand"/>
+		<widget name="description" position="1140,906" size="750,100" zPosition="1" font="Light;24" halign="center" foregroundColor="mdOnBgMed"/>
+	</screen>
+
+	<!-- ── CI Config ─────────────────────────────────────────────────────── -->
+	<screen name="CIconfigMenu" title="CI Assignment" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="CAidList_desc" render="Label" position="30,185" size="1080,44" transparent="1" font="Medium;34" foregroundColor="mdOnBg"/>
+		<eLabel position="30,237" size="1080,2" backgroundColor="mdPrimary"/>
+		<widget source="CAidList"      render="Label" position="30,248" size="1080,110" transparent="1" font="Regular;30" foregroundColor="mdOnBgMed"/>
+		<widget source="ServiceList_desc" render="Label" position="1140,92" size="750,44" transparent="1" font="Medium;34" foregroundColor="mdOnBg"/>
+		<eLabel position="1140,144" size="750,2" backgroundColor="mdPrimary"/>
+		<widget name="ServiceList" position="1140,155" size="750,780" transparent="1" zPosition="1" scrollbarMode="showOnDemand" foregroundColor="mdOnBg"/>
+		<widget source="ServiceList_info" render="Label" position="1140,155" size="750,780" transparent="1" font="Regular;30" foregroundColor="mdOnBgMed" zPosition="2"/>
+	</screen>
+
+	<!-- ── Softcam setup ────────────────────────────────────────────────── -->
+	<screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ConfigTemplate"/>
+		<widget name="info" position="1140,92" size="750,900" font="Fixed;26" foregroundColor="mdOnBg"/>
+	</screen>
+
+	<!-- ── Console ───────────────────────────────────────────────────────── -->
+	<screen name="Console" title="Command execution" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="text" position="30,92" size="1860,912" itemHeight="40" font="Fixed;28" transparent="1" foregroundColor="mdSecondary" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<!-- ── Number zap overlay ────────────────────────────────────────────── -->
+	<screen name="NumberZap" position="150,67" size="651,163" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,0" size="651,163" backgroundColor="secondBG"/>
+		<eLabel position="0,0" size="651,2" backgroundColor="mdPrimary"/>
+		<widget name="channel"     position="0,0"    size="180,90" transparent="1" font="Regular;38" foregroundColor="mdOnBgMed" borderColor="mdBg" borderWidth="0" valign="center" halign="left"/>
+		<widget name="number"      position="180,0"  size="150,90" transparent="1" font="Bold;44" foregroundColor="mdPrimary" valign="center" halign="left"/>
+		<widget name="servicename" position="0,68"   size="651,90" transparent="1" font="Regular;30" foregroundColor="mdOnBg" valign="center" halign="left"/>
+	</screen>
+
+	<screen name="NumberZapPicon" position="150,67" size="651,363" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="NumberZap"/>
+		<widget source="Service" render="Picon" position="0,165" size="220,132" alphatest="blend" transparent="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+	</screen>
+
+	<!-- ── Video mode overlay ───────────────────────────────────────────── -->
+	<screen name="VideoMode" title="VideoMode" position="127,67" size="600,75" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,0" size="600,75" backgroundColor="secondBG"/>
+		<widget name="videomode" position="0,0" size="570,60" transparent="1" font="Medium;38" foregroundColor="mdOnBg" valign="center" halign="left"/>
+	</screen>
+
+	<!-- ── PVR / Timeshift state ─────────────────────────────────────────── -->
+	<screen name="PVRState" position="192,172" size="225,45" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
+		<widget name="state" position="0,0" size="225,45" transparent="1" font="Bold;36" foregroundColor="mdSecondary" halign="left"/>
+	</screen>
+
+	<screen name="TimeshiftState" position="150,67" zPosition="0" size="1620,150" backgroundColor="secondBG" flags="wfNoBorder">
+		<panel name="PlayerTemplate"/>
+	</screen>
+
+	<screen name="TimeshiftLive" position="105,105" zPosition="2" size="450,45" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,0" size="450,45" text="Timeshift Live" transparent="1" font="Regular;34" foregroundColor="mdSecondary"/>
+	</screen>
+
+	<!-- ── Seekbar ───────────────────────────────────────────────────────── -->
+	<screen name="Seekbar" title="InfoBar" position="150,67" size="1620,150" backgroundColor="secondBG" flags="wfNoBorder">
+		<panel name="MoviePlayer"/>
+		<widget name="cursor"        position="42,84"  size="1536,4" pixmap="/usr/share/enigma2/MaterialDark/dvr/position_arrow.svg" zPosition="5" alphatest="blend"/>
+		<widget name="time"          position="42,4"   size="150,36" font="Regular;30" foregroundColor="mdSecondary" transparent="1" zPosition="1"/>
+		<widget name="PositionGauge" position="42,84"  size="1536,4" transparent="1" zPosition="4"/>
+	</screen>
+
+	<!-- ── Radio channel selection ──────────────────────────────────────── -->
+	<screen name="ChannelSelectionRadio" position="fill" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<panel name="KeyMenuInfoTemplate"/>
+		<widget name="list" position="30,92" size="1080,900" itemHeight="52" transparent="1" serviceNumberFont="Regular;32"
+			scrollbarMode="showOnDemand" serviceInfoFont="Regular;28" serviceNameFont="Regular;32" serviceItemHeight="52"
+			progressbarHeight="4" colorEventProgressbar="#00BB86FC" colorEventProgressbarBorder="#00333333"
+			fieldMargins="12" colorServiceDescription="#0003DAC6"
+			foregroundColorServiceNotAvail="#00616161" backgroundColorMarked="#00443744"/>
+		<widget source="global.CurrentTime" render="Label" position="1140,92" size="750,26" transparent="1" zPosition="1" foregroundColor="mdOnBgMed" font="Light;22" valign="center" halign="left" noWrap="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1140,126" size="210,75" transparent="1" zPosition="1" foregroundColor="mdOnBg" font="Medium;40" valign="center" halign="left" noWrap="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.CurrentService" render="ChannelNumber" position="1350,126" size="150,75" transparent="1" zPosition="1" foregroundColor="mdOnBg" font="Bold;40" valign="center" halign="left"/>
+		<widget source="session.CurrentService" render="Label" position="1500,126" size="390,75" transparent="1" zPosition="1" foregroundColor="mdOnBg" font="Regular;38" valign="center" halign="left" noWrap="1">
+			<convert type="ServiceName">NameOnly</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Picon" position="1140,214" size="150,90" alphatest="blend" transparent="1" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="RdsDecoder" render="Label" position="1140,318" size="750,110" zPosition="2" foregroundColor="mdSecondary" font="Regular;32" valign="center" halign="center">
+			<convert type="RdsInfo">RadioText</convert>
+		</widget>
+		<eLabel position="1140,442" size="750,4" backgroundColor="mdProgressBg"/>
+		<widget source="session.Event_Now" render="Progress" position="1140,442" size="750,4" foregroundColor="mdPrimary" backgroundColor="mdProgressBg" transparent="1" borderWidth="0" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1140,452" size="108,42" transparent="1" zPosition="1" foregroundColor="mdOnBg" font="Regular;32" halign="left">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1248,452" size="642,42" transparent="1" zPosition="1" foregroundColor="mdOnBg" noWrap="1" font="Regular;32" halign="left">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1140,498" size="108,42" transparent="1" zPosition="1" foregroundColor="mdOnBgMed" font="Regular;32" halign="left">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+	</screen>
+
+	<screen name="RadioInfoBar" title="InfoBar" position="0,0" size="0,0" backgroundColor="mdBg" flags="wfNoBorder"/>
+
+	<!-- ── Movie Selection ──────────────────────────────────────────────── -->
+	<screen name="MovieSelection" title="Movie Selection" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="waitingtext"  position="30,92"  size="1080,912" font="Regular;32" halign="center" valign="center" zPosition="4" foregroundColor="mdOnBg"/>
+		<widget name="chosenletter" position="30,92"  size="1080,912" foregroundColor="mdPrimary" font="Bold;112" halign="center" valign="center" transparent="1" zPosition="4"/>
+		<widget name="list" position="30,100" size="1080,900" scrollbarMode="showOnDemand" itemHeight="52" font="Regular;28"
+			dateWidth="245" fontSizesCompact="34,26" fontSizesMinimal="32,28"
+			pbarHeight="4" pbarLargeWidth="72" spaceRight="3"
+			columnsOriginal="270,300" columnsCompactDescription="240,220,240" compactColumn="300"
+			treeDescription="250" iconsWidth="32" spaceIconeText="6"/>
+		<widget source="session.CurrentService" render="Label" position="1140,92" size="375,26" foregroundColor="mdOnBgMed" font="Light;24" halign="left" transparent="1">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1515,92" size="375,26" foregroundColor="mdOnBgMed" font="Light;24" halign="right" transparent="1">
+			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
+		</widget>
+		<eLabel position="1140,126" size="750,4" backgroundColor="mdProgressBg"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="1140,126" size="750,4" transparent="1" zPosition="4" pointer="/usr/share/enigma2/MaterialDark/dvr/position_pointer1.svg:750,4">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1140,138" size="250,38" foregroundColor="mdSecondary" font="Regular;30" halign="left" transparent="1">
+			<convert type="ServiceTime">StartTime</convert>
+			<convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1390,138" size="250,38" foregroundColor="mdOnBgMed" font="Regular;28" halign="center" transparent="1">
+			<convert type="ServiceTime">Duration</convert>
+			<convert type="ClockToText">AsLength</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1640,138" size="250,38" foregroundColor="mdOnBgMed" font="Regular;28" halign="right" transparent="1">
+			<convert type="MovieInfo">RecordServiceName</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1140,186" size="750,570" foregroundColor="mdOnBg" font="Regular;28" halign="block" valign="top" transparent="1">
+			<convert type="MovieInfo">FullDescription</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1140,764" size="375,32" transparent="1" foregroundColor="mdOnBgLow" font="Light;26">
+			<convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget name="TrashcanSize"  position="1140,800" size="750,32" foregroundColor="mdOnBgLow" font="Light;26" transparent="1" halign="right"/>
+		<widget name="freeDiskSpace" position="1140,836" size="750,32" foregroundColor="mdOnBgLow" font="Light;26" transparent="1" halign="right"/>
+	</screen>
+
+	<screen name="MovieSelectionFileManagerList" position="fill" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+		<panel name="KeyMenuTemplate"/>
+	</screen>
+
+	<!-- ── Audio / subtitle selection ───────────────────────────────────── -->
+	<screen flags="wfNoBorder" name="AudioSelection" position="fill" title="Audio">
+		<panel name="PigTemplate"/>
+		<widget source="key_red"    render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/buttons/red.svg"    position="30,110" size="34,34" alphatest="on"><convert type="ConditionalShowHide"/></widget>
+		<widget source="key_green"  render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/buttons/green.svg"  position="30,155" size="34,34" alphatest="on"><convert type="ConditionalShowHide"/></widget>
+		<widget source="key_yellow" render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/buttons/yellow.svg" position="30,200" size="34,34" alphatest="on"><convert type="ConditionalShowHide"/></widget>
+		<widget source="key_blue"   render="Pixmap" pixmap="/usr/share/enigma2/MaterialDark/buttons/blue.svg"   position="30,245" size="34,34" alphatest="on"><convert type="ConditionalShowHide"/></widget>
+		<widget name="config" position="74,108" size="986,280" itemHeight="52" font="Regular;30" scrollbarMode="showOnDemand"/>
+		<widget source="streams" render="Listbox" scrollbarMode="showNever" position="30,400" size="1080,560" zPosition="3" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates": {
+					"default": (44, [
+						MultiContentEntryText(pos=(6,2), size=(67,40), font=0, flags=RT_HALIGN_LEFT, text=2),
+						MultiContentEntryText(pos=(74,2), size=(15,40), font=0, flags=RT_HALIGN_LEFT, text=1),
+						MultiContentEntryText(pos=(90,2), size=(190,40), font=0, flags=RT_HALIGN_LEFT, text=3),
+						MultiContentEntryText(pos=(290,2), size=(660,40), font=0, flags=RT_HALIGN_LEFT, text=4),
+						MultiContentEntryText(pos=(1050,4), size=(22,40), font=1, flags=RT_HALIGN_RIGHT, text=5),
+					], True, "showNever"),
+					"notselected": (44, [
+						MultiContentEntryText(pos=(6,2), size=(67,40), font=0, flags=RT_HALIGN_LEFT, text=2),
+						MultiContentEntryText(pos=(74,2), size=(15,40), font=0, flags=RT_HALIGN_LEFT, text=1),
+						MultiContentEntryText(pos=(90,2), size=(190,40), font=0, flags=RT_HALIGN_LEFT, text=3),
+						MultiContentEntryText(pos=(290,2), size=(660,40), font=0, flags=RT_HALIGN_LEFT, text=4),
+						MultiContentEntryText(pos=(1050,4), size=(22,40), font=1, flags=RT_HALIGN_RIGHT, text=5),
+					], False, "showNever")
+				},
+				"fonts": [gFont("Regular", 28), gFont("Regular", 22)],
+				"itemHeight": 44
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<!-- ── Numerical text input helper ──────────────────────────────────── -->
+	<screen name="NumericalTextInputHelpDialog" position="center,675" size="771,246" backgroundColor="mdSurface" zPosition="2" flags="wfNoBorder">
+		<eLabel position="0,0" size="771,2" backgroundColor="mdPrimary"/>
+		<widget name="key1" position="3,3"   size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key2" position="258,3"  size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key3" position="513,3"  size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key4" position="3,63"   size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key5" position="258,63"  size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key6" position="513,63"  size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key7" position="3,123"   size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key8" position="258,123" size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="key9" position="513,123" size="255,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="help1" position="3,183"   size="210,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBgMed"/>
+		<widget name="key0"  position="213,183" size="345,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBg"/>
+		<widget name="help2" position="558,183" size="210,60" font="Regular;28" valign="center" halign="center" foregroundColor="mdOnBgMed"/>
+	</screen>
+
+</skin>

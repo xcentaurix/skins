@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+	<!-- Material Dark — plugin screen overrides -->
+	<!-- Most plugin screens use SetupPanelPIG or PigTemplate automatically. -->
+	<!-- Only custom layouts are listed here. -->
+
+	<screen name="CrossEPGSetup" position="fill" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+	</screen>
+
+	<screen name="CrossEPGDownload" position="fill" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<panel name="DownloadBar"/>
+		<panel name="FeedsStatusTemplate"/>
+		<panel name="SliderTemplate"/>
+	</screen>
+
+	<screen name="PacketManager" position="fill" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+	</screen>
+
+	<screen name="NetworkBrowser" position="fill" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+	</screen>
+
+	<screen name="AutoTimerOverview" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list" position="30,92" size="1080,900" itemHeight="52" font="Regular;32" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<screen name="TimerEditList" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list" position="30,92" size="1080,900" itemHeight="52" font="Regular;32" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<screen name="TimerEdit" position="fill" flags="wfNoBorder">
+		<panel name="SetupPanelPIG"/>
+	</screen>
+
+</skin>

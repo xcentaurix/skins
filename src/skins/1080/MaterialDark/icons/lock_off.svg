@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <rect x="6" y="17" width="24" height="16" rx="3.5" fill="#616161"/>
+  <!-- Shackle open (lifted right side) -->
+  <path d="M11 17 L11 12 Q11 5 18 5 Q25 5 25 12 L25 10"
+        fill="none" stroke="#616161" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="18" cy="25" r="2.5" fill="#1E1E1E"/>
+</svg>

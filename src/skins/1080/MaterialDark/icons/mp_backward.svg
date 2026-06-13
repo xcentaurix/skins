@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Rewind: two reverse triangles -->
+  <polygon points="28,5 16,16 28,27" fill="#BB86FC"/>
+  <polygon points="16,5 4,16 16,27" fill="#BB86FC"/>
+</svg>

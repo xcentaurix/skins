@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <!-- Cast icon: screen with wifi waves in bottom-left corner -->
+  <rect x="2" y="5" width="26" height="18" rx="2" fill="none" stroke="#BB86FC" stroke-width="2"/>
+  <path d="M2 19 Q2 23 6 23" fill="none" stroke="#BB86FC" stroke-width="2" stroke-linecap="round"/>
+  <path d="M2 15 Q2 27 10 27" fill="none" stroke="#BB86FC" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="2" cy="27" r="2" fill="#BB86FC"/>
+</svg>
